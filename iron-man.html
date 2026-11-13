@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Амина — Iron Man</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #120909;
+            color: #f8fafc;
+            padding: 20px;
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px 25px;
+            background: #1f1111;
+            border-radius: 12px;
+            border-bottom: 2px solid #ef4444;
+        }
+        nav a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .header-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .header-section h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, #ef4444, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .header-section p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .item-card {
+            background: #1f1111;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #3f1d1d;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .item-card:hover {
+            transform: translateY(-5px);
+            border-color: #f59e0b;
+        }
+        .banner {
+            height: 110px;
+            background: linear-gradient(135deg, #991b1b, #d97706);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+        .info {
+            padding: 20px;
+        }
+        .tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .info p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .spec {
+            font-size: 0.85rem;
+            color: #fde68a;
+            border-top: 1px solid #3f1d1d;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← На главную</a>
+        <span>Страница: <strong>Амина (Iron Man)</strong></span>
+        <div class="nav-links">
+            <a href="batman.html">Ельдана (Batman)</a>
+            <a href="spider-man.html">Томирис (Spider-Man)</a>
+        </div>
+    </nav>
+
+    <div class="header-section">
+        <h1>Технологии Iron Man — Амина</h1>
+        <p>Костюмы, искусственный интеллект и изобретения Тони Старка</p>
+    </div>
+
+    <div class="grid">
+        <div class="item-card">
+            <div class="banner">MARK LXXXV</div>
+            <div class="info">
+                <span class="tag">Нано-броня</span>
+                <h3>Костюм Mark 85</h3>
+                <p>Самая совершенная броня из наночастиц, способная мгновенно формировать энергетические щиты и оружие.</p>
+                <div class="spec"><strong>Материал:</strong> Нано-золото и титан</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">ARC REACTOR</div>
+            <div class="info">
+                <span class="tag">Энергия</span>
+                <h3>Дуговой реактор</h3>
+                <p>Миниатюрный источник чистой энергии мощностью в несколько гигаджоулей, питающий все системы брони.</p>
+                <div class="spec"><strong>Выходная мощность:</strong> 8 ГДж/сек</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">J.A.R.V.I.S.</div>
+            <div class="info">
+                <span class="tag">Искусственный интеллект</span>
+                <h3>Д.Ж.А.Р.В.И.С. / Пятница</h3>
+                <p>Голосовой помощник и тактический ИИ, управляющий полётом, наведением и диагностикой костюма в бою.</p>
+                <div class="spec"><strong>Система:</strong> Stark OS</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">HULKBUSTER</div>
+            <div class="info">
+                <span class="tag">Тяжёлая броня</span>
+                <h3>Mark XLIV (Халкбастер)</h3>
+                <p>Модульный экзоскелет-гигант, надеваемый поверх основного костюма для сдерживания сверхсильных угроз.</p>
+                <div class="spec"><strong>Высота:</strong> 3.3 метра</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
