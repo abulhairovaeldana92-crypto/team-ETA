@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes Hub — Ельдана, Амина и Томирис</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #090d16 0%, #171f32 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #facc15, #ef4444, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            color: #94a3b8;
+            font-size: 1.2rem;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 25px;
+            max-width: 1050px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        /* Стили карточек героев */
+        .card.batman:hover {
+            border-color: #facc15;
+            box-shadow: 0 15px 30px rgba(250, 204, 21, 0.2);
+        }
+        .card.ironman:hover {
+            border-color: #ef4444;
+            box-shadow: 0 15px 30px rgba(239, 68, 68, 0.25);
+        }
+        .card.spiderman:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.25);
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        .batman .badge {
+            background: rgba(250, 204, 21, 0.15);
+            color: #facc15;
+        }
+        .ironman .badge {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+        .spiderman .badge {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        .card h2 {
+            font-size: 1.9rem;
+            margin-bottom: 12px;
+        }
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .batman .btn {
+            background: #facc15;
+            color: #090d16;
+        }
+        .ironman .btn {
+            background: linear-gradient(90deg, #dc2626, #f59e0b);
+            color: #ffffff;
+        }
+        .spiderman .btn {
+            background: linear-gradient(90deg, #dc2626, #2563eb);
+            color: #ffffff;
+        }
+        footer {
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SUPERHERO PORTAL</h1>
+        <p>Выберите героя, чтобы открыть персональную страницу</p>
+    </header>
+
+    <div class="cards-container">
+        <!-- 1. Ельдана - Batman -->
+        <a href="batman.html" class="card batman">
+            <div>
+                <span class="badge">DC Comics • Gotham</span>
+                <h2>Ельдана</h2>
+                <p>Тёмный рыцарь Готэма. Детективный гений, высокотехнологичные гаджеты и страж ночного города — Batman.</p>
+            </div>
+            <span class="btn">Страница Batman →</span>
+        </a>
+
+        <!-- 2. Амина - Iron Man -->
+        <a href="iron-man.html" class="card ironman">
+            <div>
+                <span class="badge">Marvel • Stark Industries</span>
+                <h2>Амина</h2>
+                <p>Гений, миллиардер, филантроп. Броня Mark LXXXV, реактор холодного синтеза и искусственный интеллект — Iron Man.</p>
+            </div>
+            <span class="btn">Страница Iron Man →</span>
+        </a>
+
+        <!-- 3. Томирис - Spider-Man -->
+        <a href="spider-man.html" class="card spiderman">
+            <div>
+                <span class="badge">Marvel • Queens</span>
+                <h2>Томирис</h2>
+                <p>Ваш дружелюбный сосед. Паучье чутьё, акробатика между небоскрёбами Нью-Йорка и веб-шутеры — Spider-Man.</p>
+            </div>
+            <span class="btn">Страница Spider-Man →</span>
+        </a>
+    </div>
+
+    <footer>
+        © 2026 Командный проект: Ельдана, Амина и Томирис (Lab 6)
+    </footer>
+
+</body>
+</html>
