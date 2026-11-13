@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Томирис — Spider-Man</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b1120;
+            color: #f1f5f9;
+            padding: 20px;
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px 25px;
+            background: #131c31;
+            border-radius: 12px;
+            border-bottom: 2px solid #ef4444;
+        }
+        nav a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .header-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .header-section h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, #ef4444, #3b82f6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .header-section p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .item-card {
+            background: #131c31;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #1e293b;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .item-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+        .banner {
+            height: 110px;
+            background: linear-gradient(135deg, #dc2626, #1d4ed8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+        .info {
+            padding: 20px;
+        }
+        .tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: rgba(59, 130, 246, 0.2);
+            color: #93c5fd;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .info p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .spec {
+            font-size: 0.85rem;
+            color: #fca5a5;
+            border-top: 1px solid #1e293b;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← На главную</a>
+        <span>Страница: <strong>Томирис (Spider-Man)</strong></span>
+        <div class="nav-links">
+            <a href="batman.html">Ельдана (Batman)</a>
+            <a href="iron-man.html">Амина (Iron Man)</a>
+        </div>
+    </nav>
+
+    <div class="header-section">
+        <h1>Мир Spider-Man — Томирис</h1>
+        <p>Способности, костюмы и гаджеты Человека-Паука</p>
+    </div>
+
+    <div class="grid">
+        <div class="item-card">
+            <div class="banner">WEB-SHOOTERS</div>
+            <div class="info">
+                <span class="tag">Гаджет</span>
+                <h3>Веб-шутеры</h3>
+                <p>Наручные устройства, выстреливающие сверхпрочной синтетической паутиной для полётов между зданиями.</p>
+                <div class="spec"><strong>Прочность нити:</strong> Выдерживает до 10 тонн</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">SPIDER-SENSE</div>
+            <div class="info">
+                <span class="tag">Суперспособность</span>
+                <h3>Паучье чутьё</h3>
+                <p>Интуитивное шестое чувство, мгновенно предупреждающее Питера Паркера о любой приближающейся опасности.</p>
+                <div class="spec"><strong>Реакция:</strong> В 40 раз быстрее человека</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">IRON SPIDER</div>
+            <div class="info">
+                <span class="tag">Костюм</span>
+                <h3>Железный Паук</h3>
+                <p>Высокотехнологичный нано-костюм с четырьмя механическими паучьими лапами и системой жизнеобеспечения.</p>
+                <div class="spec"><strong>Создатель:</strong> Тони Старк</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="banner">WALL-CRAWLING</div>
+            <div class="info">
+                <span class="tag">Способность</span>
+                <h3>Акробатика и ползание</h3>
+                <p>Умение удерживаться на любых вертикальных и стеклянных поверхностях и выполнять невероятные трюки в воздухе.</p>
+                <div class="spec"><strong>Город:</strong> Нью-Йорк (Квинс)</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
